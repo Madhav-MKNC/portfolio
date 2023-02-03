@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Darknet Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="dark">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#social">Profiles</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1 class="light">Hi, I'm John Doe</h1>
+            <p class="light">Web Developer and Designer</p>
+            <button id="learn-more" class="light">Learn More</button>
+        </section>
+        <section id="about" class="content-section">
+            <h2 class="light">About Me</h2>
+            <p class="light">My name is John Doe and I am a web developer and designer. I have been building websites
+                for 5 years and have experience in HTML, CSS, JavaScript, and UX/UI design. I am passionate about
+                creating beautiful and user-friendly websites that provide a great user experience. I have worked on a
+                variety of projects, from simple brochure websites to complex e-commerce applications.</p>
+        </section>
+        <section id="social" class="social-section">
+            <nav class="light">
+                <li><a href="#about">Github</a></li>
+                <li><a href="#projects">LinkedIn</a></li>
+                <li><a href="#contact">Twitter</a></li>
+                <li><a href="#projects">Instagram</a></li>
+                <li><a href="#contact">TryHackMe</a></li>
+                <li><a href="#contact">Codeforces</a></li>
+                <li><a href="#projects">Codechef</a></li>
+                <li><a href="#contact">HackerRank</a></li>
+            </nav>
+        </section>
+        <section id="projects" class="content-section">
+            <h2 class="light">My Projects</h2>
+            <div class="project">
+                <h3 class="light">Project 1</h3>
+                <img src="project1.jpg" alt="Project 1">
+                <p class="light">A brief description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3 class="light">Project 2</h3>
+                <img src="project2.jpg" alt="Project 2">
+                <p class="light">A brief description of project 2.</p>
+            </div>
+            <div class="project">
+                <h3 class="light">Project 3</h3>
+                <img src="project3.jpg" alt="Project 3">
+                <p class="light">A brief description of project 3.</p>
+            </div>
+        </section>
+        <section id="contact" class="content-section">
+            <h2 class="light">Get In Touch</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name" class="light">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email" class="light">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="message" class="light">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="light">Copyright &copy; 2023 John Doe</p>
+    </footer>
+</body>
+
+</html>
