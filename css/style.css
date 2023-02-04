@@ -1,8 +1,19 @@
 body {
     background-image: url(https://pbs.twimg.com/media/C6LuKS2VAAAMe3m?format=jpg&name=4096x4096);
+    animation: animateBackground 20s linear infinite;
     background-color: black;
     font-family: Arial, sans-serif;
     color: red;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40% 100%;
+    }
 }
 
 #video-background {
@@ -18,7 +29,7 @@ body {
 
 
 .light {
-    color: white;
+    color: lightskyblue;
 }
 
 nav ul {
@@ -30,16 +41,18 @@ nav ul {
 }
 
 nav li {
+    font-size: large;
     margin: auto;
     transition: all 0.2s ease;
 }
 
 li:hover {
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: larger;
 }
 
 nav a {
+    color: palegreen;
     text-decoration: none;
 }
 
@@ -91,7 +104,7 @@ nav a {
 }
 
 .legion-section {
-    color: rgb(255, 0, 0);
+    color: lightskyblue;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -101,7 +114,6 @@ nav a {
 
 
 header {
-    color: red;
     background: rgba(0, 0, 0, 0.331);
     padding: 20px;
 }
