@@ -6,6 +6,18 @@ body {
     color: red;
 }
 
+.blur {
+    display: flex;
+    flex-wrap: wrap
+}
+
+@media (min-width: 2000px) {
+    .blur {
+        max-width: 2000px;
+        margin: 0 auto
+    }
+}
+
 @keyframes animateBackground {
     0% {
         background-position: 0 0;
