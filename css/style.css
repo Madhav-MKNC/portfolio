@@ -6,17 +6,17 @@ body {
     color: red;
 }
 
-.blur {
+/* .blur {
     display: flex;
     flex-wrap: wrap
-}
+} */
 
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
     .blur {
         max-width: 2000px;
         margin: 0 auto
     }
-}
+} */
 
 @keyframes animateBackground {
     0% {
