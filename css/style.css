@@ -2,7 +2,7 @@ body {
     background-image: url(https://pbs.twimg.com/media/C6LuKS2VAAAMe3m?format=jpg&name=4096x4096);
     animation: animateBackground 20s linear infinite;
     background-color: black;
-    font-family: Arial, sans-serif;
+    font-family: Proto Mono, Helvetica, Arial, sans-serif;
     color: red;
 }
 
