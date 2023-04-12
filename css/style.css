@@ -47,8 +47,10 @@ nav li {
 }
 
 li:hover {
-    cursor: pointer;
-    font-size: larger;
+    /* cursor: pointer;
+    font-size: larger; */
+    background: lightblue;
+    padding: 5px;
 }
 
 nav a {
