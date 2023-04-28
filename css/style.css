@@ -2,8 +2,11 @@ body {
     background-image: url(https://pbs.twimg.com/media/C6LuKS2VAAAMe3m?format=jpg&name=4096x4096);
     animation: animateBackground 20s linear infinite;
     background-color: black;
-    font-family: "Courier New", Courier, monospace;
-    color: red;
+    /* font-family: ; */
+    font-family: fantasy;
+    color: lightskyblue;
+    size: larger;
+    font-size: larger;
 }
 
   
@@ -29,9 +32,7 @@ body {
     height: 100%;
 }
 
-.light {
-    color: lightskyblue;
-}
+/* LI section */
 
 nav ul {
     list-style: none;
@@ -43,17 +44,14 @@ nav ul {
 
 nav li {
     padding: 10px;
-    font-size: large;
+    font-size: larger;
     margin: auto;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
+    font-weight: bolder;
 }
 
 li:hover {
-    /* cursor: pointer;
-    font-size: larger; */
-    /* background: blue; */
-    /* background: rgba(0, 0, 0, 0.331); */
-    background: red;
+    background: green;
 }
 
 nav a {
@@ -61,26 +59,22 @@ nav a {
     text-decoration: none;
 }
 
+/* Hero Section */
+
 .hero-section {
-    /* background-image: url(https://pbs.twimg.com/media/C6LuKS2VAAAMe3m?format=jpg&name=4096x4096);
-    background-size: cover;
-    background-position: center; */
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.hero-section h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: xx-large;
 }
 
 .hero-section p {
-    font-size: 24px;
     margin-bottom: 20px;
 }
+
+/* Content section */
 
 .content-section {
     padding: 50px;
@@ -88,28 +82,19 @@ nav a {
 
 .content-section h2 {
     color: lightgreen;
-    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .content-section p {
     color: rgb(0, 200, 0);
-    font-size: 18px;
+    font-size: larger;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.content-section h3 {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Legion section */
 
 .legion-section {
-    color: lightskyblue;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -117,11 +102,14 @@ nav a {
     flex-direction: column;
 }
 
+/* header */
 
 header {
     background: rgba(0, 0, 0, 0.331);
     padding: 20px;
 }
+
+/* footer */
 
 footer {
     background: 0%;
