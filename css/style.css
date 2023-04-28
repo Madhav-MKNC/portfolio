@@ -102,6 +102,10 @@ nav a {
     flex-direction: column;
 }
 
+.legion-section h2 {
+    align-self: center;
+}
+
 /* header */
 
 header {
