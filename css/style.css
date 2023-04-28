@@ -6,15 +6,17 @@ body {
     color: red;
 }
 
+  
 @keyframes animateBackground {
     0% {
         background-position: 0 0;
     }
 
     100% {
-        background-position: 40% 100%;
+        background-position: 35% 100%;
     }
 }
+
 
 #video-background {
     position: absolute;
@@ -26,7 +28,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 
 .light {
     color: lightskyblue;
@@ -41,6 +42,7 @@ nav ul {
 }
 
 nav li {
+    padding: 10px;
     font-size: large;
     margin: auto;
     transition: all 0.2s ease;
@@ -49,8 +51,9 @@ nav li {
 li:hover {
     /* cursor: pointer;
     font-size: larger; */
-    background: lightblue;
-    padding: 5px;
+    /* background: blue; */
+    /* background: rgba(0, 0, 0, 0.331); */
+    background: red;
 }
 
 nav a {
