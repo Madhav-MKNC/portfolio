@@ -46,7 +46,7 @@ nav li {
     padding: 10px;
     font-size: larger;
     margin: auto;
-    transition: all 0.4s ease;
+    transition: all 0.1s ease;
     font-weight: bolder;
 }
 
