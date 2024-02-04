@@ -1,0 +1,254 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+\input{pubs-num.tex}
+\addbibresource{sample.bib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Resume stars from here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\name{Madhav Kumar}
+\tagline{Software Developer}
+%% You can add multiple photos on the left or right
+\photoR{2.2cm}{iitd}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{ph1200707@iitd.ac.in}
+  \phone{+91-8169101348}
+  % \mailaddress{New Delhi, Delhi, 110016}
+  \location{IIT Delhi, New Delhi}
+  \homepage{madhav-mknc.github.io/portfolio}
+  \twitter{@5mknc5}
+  \linkedin{madhav-kumar-iitd}
+  \github{madhav-mknc}
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+% \cvsection{Experience}
+
+% \cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
+% \begin{itemize}
+% \item Job description 1
+% \item Job description 2
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Job Title 2}{Company 2}{Month 20XX -- Ongoing}{Location}
+% \begin{itemize}
+% \item Job description 1
+% \item Job description 2
+% \end{itemize}
+
+% \cvsection{Projects}
+
+% \cvevent{Project 1}{Funding agency/institution}{}{}
+% \begin{itemize}
+% \item Details
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Project 2}{Funding agency/institution}{Project duration}{}
+% A short abstract would also work.
+
+\cvsection{Projects}
+
+\cvevent{\href{https://github.com/Madhav-MKNC/LAWrence-prototype}{LAWrence: Swiss Legal Memo Tool}}{Dec 2023}
+\begin{itemize}
+    \item Orchestrated \textbf{LLMs for summarization and Q/A retrieval}.
+    \item Designed data models for article extraction and \href{https://github.com/madhav-MKNC/lawrence-lab/}{\textbf{legal analysis}}.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/Madhav-MKNC/Babu-LOHAR}{Slack Bot}}{June 2023}
+\begin{itemize}
+    \item Developed a versatile \textbf{Slack Bot} using advanced LLMs.
+    \item Implemented \textbf{Retrieval Augmented Generation (RAG)} for private document retrieval with \textbf{Vector databases} and the \textbf{Langchain}.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/Madhav-MKNC/admin-portal}{Admin-Portal: AI Web Chatbot}}{July 2023}
+\begin{itemize}
+    \item Built a web chatbot trained on user's private data using Flask, LangChain, \textbf{Pinecone vector database}, and OpenAI SDK.
+    \item Implemented advanced RAG and built a full-stack web app.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/Madhav-MKNC/xtweet}{X-Tweet: Twitter Co-pilot}}{November 2023}
+\begin{itemize}
+    \item Created a \textbf{Telegram bot} for personalized tweet generation.
+    \item A \textbf{marketing tool} to manage and enhance user's X presence.
+    \item \textbf{Finetuned} advanced LLMs for best quality content generation.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/Madhav-MKNC/Miles-Lite}{Miles AI: WhatsApp Co-pilot}}{August 2023}
+\begin{itemize}
+    \item Employed advanced AI technology to generate personalized replies, enhancing conversation dynamics. Used \textbf{OpenAI APIs}.
+    \item Gained popularity among startup folks and \textbf{100+ users}.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/madhav-mknc/x-hall}{X-Hall: A CLI based chatroom}}{Feb 2023}
+\begin{itemize}
+    \item Designed a \textbf{P2P} network using \textbf{Socket Programming} in Python.
+    \item Implemented \textbf{Multi-threading} and Command Line Interface.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/madhav-mknc/eye-pers}{Eye-PERS: Eyewear Recommendation Tool}}{May 2023}
+\begin{itemize}
+    \item Recommendation engine for eyewears on Lenskart.
+    \item Implemented Object Detection and \textbf{AWS Rekognition}.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/Madhav-MKNC/Web-Assistant}{Personal Web Assistant}}{Feb 2024}
+\begin{itemize}
+    \item Developed a \textbf{Chrome extension} for a personal web assistance.
+    \item Orchestrated advanced \textbf{Large Language Models (LLMs)} and vector databases in the backend using \textbf{Llama Index}.
+\end{itemize}
+
+\divider\smallskip
+
+\cvevent{\href{https://github.com/madhav-mknc/who-is-online}{Who-Is-Online}}{January 2024}
+\begin{itemize}
+    \item Built a \textbf{web extension} for web users interaction.
+    \item Turns every website on the surface web into a chatroom. 
+\end{itemize}
+
+\medskip
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Education}
+
+\cvvevent{B-Tech Major in Engineering Physics}
+{Indian Institute of Technology Delhi}
+{2024}{New Delhi, Delhi}
+
+\divider
+\cvvevent{Class-XII CBSE}{Coast Guard Public School}
+{2018 -- 2020}
+{Daman, Daman \& Diu}
+
+\divider
+\cvvevent{Class-X CBSE}{Kendriya Vidyalaya Sangathan}
+{2010 -- 2018}
+{Multiple Locations}
+
+\medskip
+
+\cvsection{Skills}
+
+\textbf{Programming Languages:}\\
+\medskip
+\cvtag{Python} \cvtag{Java} \cvtag{C/C++} \cvtag{JavaScript}
+
+\bigskip
+\divider
+\smallskip
+
+\textbf{Tools:}\\
+\medskip
+\cvtag{Git} \cvtag{Linux} \cvtag{Wireshark} \cvtag{Hydra} \cvtag{Nmap} \\
+\cvtag{Burpsuit} \cvtag{Metasploit} \cvtag{Hashcat} \cvtag{MySQL}
+
+\divider
+
+\textbf{Libraries/Frameworks:}\\
+\medskip
+\cvtag{Flask} \cvtag{Langchain} \cvtag{Llama index} \cvtag{Socket} \\
+\cvtag{Scapy} \cvtag{Telegram SDK} \cvtag{Discord SDK}
+\cvtag{Transformers} \cvtag{BeautifulSoup} \cvtag{Selenium} \\
+
+\bigskip
+\divider
+\bigskip
+
+\cvtag{Object-Oriented Programming System} \\
+\cvtag{Data Structure and Algorithms} \cvtag{Web Dev} \\
+\cvtag{Computer Networking} \cvtag{Capture the Flags} \\
+\cvtag{Generative AI} \cvtag{Web Scraping} \cvtag{CLI Dev}
+
+\medskip
+
+\cvsection{Stats}
+
+\begin{itemize}
+    \item Under top 1\% Hackers on \textbf{\href{https://tryhackme.com/p/Aniton}{TryHackMe}}
+    \item Under top 10\% Developers on \textbf{\href{https://github.com/madhav-MKNc}{Github}}
+    \item 4-Star rated on Codechef; Rating 1800+
+    \item Pupil rated on \textbf{\href{https://codeforces.com/profile/a9_10}{Codeforces}}; Rating 1300+
+    \item 5-Star rated in C++, Python, Java, and Problem Solving on \textbf{\href{https://www.hackerrank.com/profile/gammusicrew}{HackerRank}}
+    \item Cleared JEE Mains and JEE Advanced
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
