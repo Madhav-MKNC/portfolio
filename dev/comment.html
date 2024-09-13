@@ -1,0 +1,88 @@
+<!-- Social Share and Interaction Section -->
+<div id="social-share-section" class="social-share-section">
+    <h3 class="section-title">Share this:</h3>
+    <div class="share-buttons-container">
+        <!-- Twitter -->
+        <div class="share-button">
+            <button
+                id="twitter-share"
+                class="share-twitter"
+                onclick="window.open(this.href, '_blank'); return false;"
+                title="Share on Twitter"
+            >
+                Twitter
+            </button>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="share-button">
+            <button
+                id="linkedin-share"
+                class="share-linkedin"
+                onclick="window.open(this.href, '_blank'); return false;"
+                title="Share on LinkedIn"
+            >
+                LinkedIn
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Styling -->
+<style>
+    .social-share-section {
+        margin: 20px 0;
+    }
+
+    .share-buttons-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    .share-button {
+        display: inline-block;
+    }
+
+    .share-button button {
+        padding: 10px 15px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: Arial, sans-serif;
+        background-color: #0077b5;
+    }
+
+    .share-twitter {
+        background-color: #1da1f2;
+    }
+
+    .share-linkedin {
+        background-color: #0077b5;
+    }
+
+    .share-button button:hover {
+        opacity: 0.85;
+    }
+</style>
+
+<!-- JavaScript to Update Share URLs Dynamically -->
+<script>
+    // Get the current page URL and title
+    const currentUrl = encodeURIComponent(window.location.href);
+    const blogTitle = encodeURIComponent(document.title);
+    const twitterHandle = "5mknc5";
+    const linkedInProfile = "https://www.linkedin.com/in/madhav-iitd";
+    const twitterShareText = `${blogTitle} ${currentUrl} via @${twitterHandle}`;
+    const linkedInShareText = `${blogTitle} ${currentUrl} via ${linkedInProfile}`;
+
+    // Set Twitter Share URL
+    document.getElementById(
+        "twitter-share"
+    ).href = `https://twitter.com/intent/tweet?text=${twitterShareText}`;
+
+    // Set LinkedIn Share URL
+    document.getElementById(
+        "linkedin-share"
+    ).href = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}&text=${linkedInShareText}`;
+</script>
